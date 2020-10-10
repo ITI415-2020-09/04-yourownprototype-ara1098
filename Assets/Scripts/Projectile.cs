@@ -13,5 +13,13 @@ public class Projectile : MonoBehaviour
             Destroy(this.gameObject);                                      // b
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("PickUp"))
+        {
+            other.gameObject.SetActive(false);
+        }
+    }
 }
 
