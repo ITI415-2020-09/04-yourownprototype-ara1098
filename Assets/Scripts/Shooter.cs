@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Shooter : MonoBehaviour
 {
-    
-   
 
-       [Header("Set in Inspector")]                                            
+
+
+    [Header("Set in Inspector")]                                            
     public GameObject prefabProjectile;
     public float velocityMult = 8f;
    
@@ -19,19 +19,14 @@ public class Shooter : MonoBehaviour
     public bool aimingMode;
     private Rigidbody projectileRigidbody;
 
-   
-
-       // Start is called before the first frame update
-             void Start()
-            {
-        
-            }
-
- 
 
 
-       // Update is called once per frame
-       void Update()
+
+
+
+
+    // Update is called once per frame
+    void Update()
     {
         // If Slingshot is not in aimingMode, don't run this code
         if (!aimingMode) return;                                                  
